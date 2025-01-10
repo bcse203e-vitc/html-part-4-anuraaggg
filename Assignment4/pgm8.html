@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Form</title>
+</head>
+<body>
+    <h1>Online Quiz</h1>
+    <form action="/submit-quiz" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <fieldset>
+            <legend>Question 1: What is the capital of France?</legend>
+            <label for="paris">Paris</label>
+            <input type="radio" id="paris" name="q1" value="Paris" required><br>
+            <label for="london">London</label>
+            <input type="radio" id="london" name="q1" value="London"><br>
+            <label for="berlin">Berlin</label>
+            <input type="radio" id="berlin" name="q1" value="Berlin"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question 2: Which of these are programming languages? (Choose all that apply)</legend>
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="q2" value="HTML"><br>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="q2" value="Python"><br>
+            <label for="english">English</label>
+            <input type="checkbox" id="english" name="q2" value="English"><br><br>
+        </fieldset>
+
+        <label for="timer">Time Remaining:</label>
+        <input type="text" id="timer" placeholder="Time left: 5 minutes" disabled><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
