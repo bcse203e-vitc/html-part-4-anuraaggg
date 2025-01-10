@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+    <h1>Product Order Form</h1>
+    <form action="/submit-order" method="post">
+        <label for="name">Customer Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" required></textarea><br><br>
+
+        <label for="product">Product:</label><br>
+        <select id="product" name="product" required>
+            <option value="product1" data-price="10">Product 1 - Rs.10</option>
+            <option value="product2" data-price="20">Product 2 - Rs.20</option>
+            <option value="product3" data-price="30">Product 3 - Rs.30</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="delivery">Delivery Preferences:</label><br>
+        <label for="standard">Regular</label>
+        <input type="radio" id="standard" name="delivery" value="Regular" required>
+        <label for="express">Prime</label>
+        <input type="radio" id="express" name="delivery" value="Prime"><br><br>
+
+        <label for="coupon">Apply Coupon (if any):</label><br>
+        <input type="text" id="coupon" name="coupon"><br><br>
+
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+</html>

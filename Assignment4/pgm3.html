@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+</head>
+<body>
+    <h1>Website Feedback Form</h1>
+    <form action="/submit-feedback" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rate the Website (1-5):</label><br>
+        <label for="star1">1 Star</label>
+        <input type="radio" name="rating" id="star1" value="1" required><br>
+        <label for="star2">2 Stars</label>
+        <input type="radio" name="rating" id="star2" value="2"><br>
+        <label for="star3">3 Stars</label>
+        <input type="radio" name="rating" id="star3" value="3"><br>
+        <label for="star4">4 Stars</label>
+        <input type="radio" name="rating" id="star4" value="4"><br>
+        <label for="star5">5 Stars</label>
+        <input type="radio" name="rating" id="star5" value="5"><br><br>
+
+        <label for="feedback-type">Type of Feedback:</label><br>
+        <select id="feedback-type" name="feedback-type" required>
+            <option value="suggestion">Suggestion</option>
+            <option value="bug-report">Bug Report</option>
+            <option value="compliment">Compliment</option>
+        </select><br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="25" required></textarea><br><br>
+
+        <label for="recommend">Would you recommend us?</label><br>
+        <label for="yes">Yes</label>
+        <input type="radio" name="recommend" id="yes" value="Yes" required><br>
+        <label for="no">No</label>
+        <input type="radio" name="recommend" id="no" value="No"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
